@@ -1,19 +1,18 @@
 cmake_minimum_required(VERSION 3.22)
-project(Linux_coding)
-
-set(CMAKE_C_STANDARD 11)
-
-set(CMAKE_C_COMPILER "D:\\tools\\msys64\\mingw64\\bin\\gcc.exe")
-
-set(CMAKE_CXX_COMPILER "D:\\tools\\msys64\\mingw64\\bin\\g++.exe")  # 指定编译器路径
-
-# add_compile_options(
-#     -finput-charset=utf-8 
-#     -fexec-charset=utf-8 
-# )
-
-# 添加可执行文件
+project(Linux_sample_code)
 
 set(CMAKE_C_STANDARD 99)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_C_COMPILER   "D:/tools/msys64/mingw64/bin/gcc.exe")
+set(CMAKE_CXX_COMPILER "D:/tools/msys64/mingw64/bin/g++.exe")
 
-add_executable(test code/1/1.1/test.cpp)
+# 设置可执行文件输出目录
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+# 递归添加所有含有 CMakeLists.txt 的子目录
+file(GLOB_RECURSE SUB_CMAKES CONFIGURE_DEPENDS
+     ${CMAKE_SOURCE_DIR}/code/**/CMakeLists.txt)
+foreach(_cm ${SUB_CMAKES})
+    get_filename_component(_dir ${_cm} DIRECTORY)
+    add_subdirectory(${_dir})
+endforeach()
