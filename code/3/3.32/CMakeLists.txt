@@ -1,3 +1,3 @@
 # 把目录下所有 .cpp 编成一个可执行文件
 file(GLOB SRCS *.cpp)
-add_executable(code1.5 ${SRCS})
+add_executable(code3.32 ${SRCS})
