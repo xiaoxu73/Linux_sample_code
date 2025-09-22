@@ -6,14 +6,14 @@
 #include "CLConditionVariable.h"
 
 /*
-Ä¬ÈÏÇé¿öÏÂ£¬´´½¨Ò»¸ö³õÊ¼ÎÞÐÅºÅ£¬×Ô¶¯ÖØÖÃµÄÊÂ¼þ£¨ÓÃÓÚ»½ÐÑÒ»¸öµÈ´ýÏß³Ì£©
-ÔÚ¹¹Ôìº¯ÊýÖÐ£¬ÈôbSemaphore±»ÉèÖÃÎªtrue£¬Ôòµ÷ÓÃ¼¸´ÎSet£¬¼´¿É»½ÐÑ¼¸´Î»ò¸öÏß³Ì
+Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ÅºÅ£ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú»ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½È´ï¿½ï¿½ß³Ì£ï¿½
+ï¿½Ú¹ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½bSemaphoreï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªtrueï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½Setï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½ï¿½Ñ¼ï¿½ï¿½Î»ï¿½ï¿½ï¿½ß³ï¿½
 */
 class CLEvent
 {
 public: 
 	/*
-	¹¹Ôìº¯ÊýºÍÎö¹¹º¯Êý³ö´íÊ±£¬»áÅ×³ö×Ö·û´®ÀàÐÍÒì³£
+	ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£
 	*/
 	CLEvent( );
 	explicit CLEvent(bool bSemaphore);

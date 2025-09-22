@@ -1,4 +1,5 @@
 #include <iostream>
+#include <unistd.h>
 #include "CLThread.h"
 #include "CLMessage.h"
 #include "CLMsgLoopManagerForSTLqueue.h"

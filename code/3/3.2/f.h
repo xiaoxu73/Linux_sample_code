@@ -1,7 +1,7 @@
 #ifndef F_H
 #define F_H
 
-int i = 0;
+// int i;
 
 void f();
 
