@@ -3,8 +3,8 @@ project(Linux_sample_code)
 
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 11)
-# set(CMAKE_C_COMPILER   "/usr/bin/gcc.exe")
-# set(CMAKE_CXX_COMPILER "/usr/bin/g++.exe")
+set(CMAKE_C_COMPILER   "/usr/bin/gcc")
+set(CMAKE_CXX_COMPILER "/usr/bin/g++")
 
 # 让 CMake 自动下载/编译 GTest（无需手动装）
 include(FetchContent)

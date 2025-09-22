@@ -4,7 +4,7 @@
 #include "CLStatus.h"
 
 /*
-CLExecutiveFunctionProviderÀà·â×°ÁËÖ´ĞĞÌå¾ßÌåµÄÒµÎñ¹¦ÄÜ
+CLExecutiveFunctionProviderï¿½ï¿½ï¿½×°ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½
 */
 class CLExecutiveFunctionProvider
 {

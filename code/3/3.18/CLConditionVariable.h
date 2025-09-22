@@ -10,7 +10,7 @@ class CLConditionVariable
 {
 public:
 	/*
-	构造函数和析构函数出错时，会抛出字符串类型异常
+	锟斤拷锟届函锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷时锟斤拷锟斤拷锟阶筹拷锟街凤拷锟斤拷锟斤拷锟斤拷锟届常
 	*/
 	CLConditionVariable();
 	virtual ~CLConditionVariable();
