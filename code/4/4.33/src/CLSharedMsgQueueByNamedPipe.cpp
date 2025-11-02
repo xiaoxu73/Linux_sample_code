@@ -1,5 +1,6 @@
 #include <fcntl.h>
 #include <errno.h>
+#include <unistd.h>
 #include "CLSharedMsgQueueByNamedPipe.h"
 #include "CLMessageDeserializer.h"
 #include "CLLogger.h"

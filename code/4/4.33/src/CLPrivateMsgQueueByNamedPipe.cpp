@@ -1,4 +1,5 @@
 #include <errno.h>
+#include <unistd.h>
 #include "CLLogger.h"
 #include "CLPrivateMsgQueueByNamedPipe.h"
 

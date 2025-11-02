@@ -3,6 +3,7 @@
 #include <errno.h>
 #include <string>
 #include <string.h>
+#include <unistd.h>
 #include "CLLogger.h"
 #include "CLMessageQueueByNamedPipe.h"
 
