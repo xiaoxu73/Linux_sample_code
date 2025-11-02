@@ -3,8 +3,12 @@ project(Linux_sample_code)
 
 set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_C_COMPILER   "/usr/bin/gcc")
-set(CMAKE_CXX_COMPILER "/usr/bin/g++")
+# set(CMAKE_C_COMPILER   "/usr/bin/gcc")
+# set(CMAKE_CXX_COMPILER "/usr/bin/g++")
+
+set(CMAKE_C_COMPILER   "D:/tools/msys64/mingw64/bin/gcc.exe")
+set(CMAKE_CXX_COMPILER "D:/tools/msys64/mingw64/bin/g++.exe")
+
 
 # 让 CMake 自动下载/编译 GTest（无需手动装）
 include(FetchContent)
@@ -25,7 +29,3 @@ foreach(_cm ${SUB_CMAKES})
     add_subdirectory(${_dir})
 endforeach()
 
-# 链接 GTest
-# target_link_libraries(test_math gtest_main)   # gtest_main 自带 main()
-# include(GoogleTest)
-# gtest_discover_tests(test_math)               # 自动把 TEST 注册到 VSCode

@@ -5,7 +5,7 @@
 #include "CLStatus.h"
 
 /*
-用于向文件LOG_FILE_NAME中，记录日志信息
+锟斤拷锟斤拷锟斤拷锟侥硷拷LOG_FILE_NAME锟叫ｏ拷锟斤拷录锟斤拷志锟斤拷息
 */
 class CLLogger
 {

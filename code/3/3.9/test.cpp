@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// 基于模板类实现线程和线程函数
 class CLMyThread : public CLThread<CLMyThread>
 {
 public:

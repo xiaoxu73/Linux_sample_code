@@ -41,6 +41,7 @@ int main()
     CLExecutiveFunctionProvider *myfunction = new CLMyFunction();
     CLExecutive *pThread = new CLThread(myfunction);
 
+    // 引入互斥量进行线程同步
     SPara *p = new SPara;
     p->Flag = 3;
     pthread_mutex_init(&(p->mutex), 0);

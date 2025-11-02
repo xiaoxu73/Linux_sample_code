@@ -10,6 +10,7 @@
 #define MAX_SIZE 265
 #define BUFFER_SIZE_LOG_FILE 4096
 
+// 静态成员变量可以直接初始化
 CLLogger* CLLogger::m_pLog = 0;
 pthread_mutex_t *CLLogger::m_pMutexForCreatingLogger = CLLogger::InitializeMutex();
 

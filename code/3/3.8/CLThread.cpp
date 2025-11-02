@@ -1,5 +1,6 @@
 #include "CLThread.h"
 #include "CLExecutiveFunctionProvider.h"
+#include "CLExecutive.h"
 #include "CLLogger.h"
 
 CLThread::CLThread(CLExecutiveFunctionProvider *pExecutiveFunctionProvider) : CLExecutive(pExecutiveFunctionProvider)

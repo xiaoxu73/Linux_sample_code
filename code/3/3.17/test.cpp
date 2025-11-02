@@ -34,7 +34,7 @@ public:
 	try
 	{
 	    SPara *p = (SPara*)pContext;
-
+        // 退出作用域时局部对象析构自动销毁锁
 	    CLCriticalSection cs(&(p->mutex));
 
 	    p->Flag++;
@@ -62,12 +62,13 @@ int main()
 
     sleep(2);
 
+    // 退出作用域时自动销毁锁
     {
-	CLCriticalSection cs(&(p->mutex));
+	    CLCriticalSection cs(&(p->mutex));
 
-	p->Flag++;
+	    p->Flag++;
 
-	cout << p->Flag << endl;
+	    cout << p->Flag << endl;
     }
 
     pThread->WaitForDeath();

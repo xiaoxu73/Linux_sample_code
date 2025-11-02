@@ -5,7 +5,7 @@
 #include "CLStatus.h"
 
 /*
-ÓÃÓÚÏòÎÄ¼şLOG_FILE_NAMEÖĞ£¬¼ÇÂ¼ÈÕÖ¾ĞÅÏ¢
+ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½LOG_FILE_NAMEï¿½Ğ£ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ö¾ï¿½ï¿½Ï¢
 */
 class CLLogger
 {
@@ -31,10 +31,10 @@ private:
 
 private:
 	int m_Fd;
-	pthread_mutex_t *m_pMutexForWritingLog;
+	pthread_mutex_t *m_pMutexForWritingLog; // ç”¨äºå†™æ—¥å¿—çš„äº’æ–¥é‡é”
 	
 	static CLLogger *m_pLog;
-	static pthread_mutex_t *m_pMutexForCreatingLogger;
+	static pthread_mutex_t *m_pMutexForCreatingLogger; //åˆ›å»ºæ—¥å¿—å¯¹è±¡çš„äº’æ–¥é‡é”
 
 private:
 	char *m_pLogBuffer;

@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// 基于接口的方式实现线程和线程函数
 class CLParaPrinter : public CLExecutiveFunctionProvider
 {
 public:
