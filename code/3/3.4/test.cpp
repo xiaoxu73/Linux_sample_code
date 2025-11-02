@@ -22,7 +22,7 @@ int main()
 	cout << "pthread_create error" << endl;
 	return 0;
     }
-    
+    // 主线程等待子线程结束后再退出
     pthread_join(tid, 0);
 
     return 0;

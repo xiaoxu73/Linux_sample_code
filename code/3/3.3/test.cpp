@@ -14,6 +14,7 @@ void *thread(void *arg)
     return (void *)0;
 }
 
+// 程序执行没有任何输出，因为主线程创建子线程后立刻退出，导致进程终止，子线程还没来得及执行就被强制终止了
 int main()
 {
     pthread_t tid;

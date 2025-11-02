@@ -10,6 +10,9 @@ set(CMAKE_C_COMPILER   "D:/tools/msys64/mingw64/bin/gcc.exe")
 set(CMAKE_CXX_COMPILER "D:/tools/msys64/mingw64/bin/g++.exe")
 
 
+# 设置可执行文件输出目录
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
 # 让 CMake 自动下载/编译 GTest（无需手动装）
 include(FetchContent)
 FetchContent_Declare(
@@ -17,9 +20,6 @@ FetchContent_Declare(
   GIT_REPOSITORY https://github.com/google/googletest.git
   GIT_TAG        v1.15.2)   # 写此文时最新 release
 FetchContent_MakeAvailable(googletest)
-
-# 设置可执行文件输出目录
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # 递归添加所有含有 CMakeLists.txt 的子目录
 file(GLOB_RECURSE SUB_CMAKES CONFIGURE_DEPENDS
