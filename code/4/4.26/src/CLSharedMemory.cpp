@@ -3,6 +3,7 @@
 #include <sys/shm.h>
 #include <string.h>
 #include <fcntl.h>
+#include <unistd.h>
 #include <string>
 #include <errno.h>
 #include "CLSharedMemory.h"

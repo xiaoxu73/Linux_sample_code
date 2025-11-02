@@ -12,10 +12,10 @@ class CLMutex
 {
 public:
 	/*
-	¹¹Ôìº¯ÊýºÍÎö¹¹º¯Êý³ö´íÊ±£¬»áÅ×³ö×Ö·û´®ÀàÐÍÒì³£
+	ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½×³ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£
 	*/
 	CLMutex();
-	//ÐèÒª±£Ö¤pMutexÖ¸ÏòµÄ»¥³âÁ¿ÒÑ¾­±»³õÊ¼»¯ÁË
+	//ï¿½ï¿½Òªï¿½ï¿½Ö¤pMutexÖ¸ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
 	explicit CLMutex(pthread_mutex_t *pMutex);
 	CLMutex(const char *pstrFileName, int nType);
 	CLMutex(const char *pstrFileName, pthread_mutex_t *pMutex);
