@@ -74,6 +74,11 @@ CLStatus CLLogger::WriteLog(const char *pstrMsg, long lErrorCode)
 	unsigned int total_len = len_code + len_strmsg;
 	if(total_len > BUFFER_SIZE_LOG_FILE)
 	{
+		// 先刷新缓冲区中已有的数据，保证日志顺序正确
+		CLStatus flushStatus = Flush();
+		if (!flushStatus.IsSuccess() && (m_Fd == -1))
+			return CLStatus(-1, 0);
+			
 		if(m_Fd == -1)
 			return CLStatus(-1, 0);
 
