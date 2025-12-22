@@ -78,6 +78,7 @@ void* TestThreadForCLLog(void *arg)
 	long i = (long)arg;	
 	long j = (long)CLLogger::GetInstance();	
 	ObjectsForLog[i] = j;
+	return nullptr;
 }
 
 TEST(CLLogger, Singleton)
@@ -114,6 +115,7 @@ void* TestThreadForCLLog1(void *arg)
 		else
 			CLLogger::GetInstance()->Flush();
 	}
+	return nullptr;
 }
 
 TEST(CLLogger, WriteLogForMultiThread)
